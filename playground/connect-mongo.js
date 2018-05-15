@@ -18,13 +18,13 @@ MongoClient.connect(url,{ useNewUrlParser: true },(err ,client)=>{
      return console.log('unable ti insert',err);
    }
    console.log(JSON.stringify(result.ops, undefined ,2))
- })
- db.collection('User').insertOne ({name : ' ' ,
-  age : ' ' , location : ' '}, (err,result)=>{
+ })*/
+ db.collection('User').insertOne ({name : ' tota' ,
+  age : ' 27' , location : ' bhry'}, (err,result)=>{
     if (err){
       return console.log('unable ti insert',err);
     }
     console.log(JSON.stringify(result.ops, undefined ,2))
- })*/
+ })
   client.close ();
 });

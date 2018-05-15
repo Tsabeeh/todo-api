@@ -21,9 +21,16 @@ MongoClient.connect(url,{ useNewUrlParser: true },(err ,client)=>{
 /*db.collection('Todos').findOneAndDelete ({'completed': false}).then((result)=>{
   console.log(result)
 })*/
-db.collection('User').deleteMany({'age' : 27}).then((res)=>{
+/*db.collection('Users').remove({'name': 'tota'}).then((res)=>{
+  console.log(res);
+});*/try {
+db.collection('User').deleteMany({'name' : 'tota'}).then((res)=>{
   console.log(res);
 })
+} catch (e) {
+  console.log(e)
+}
+
 /*db.collection('User').findOneAndDelete({'_id' : new ObjectID ('5af8c672a20d711ebbbc0d92')}) .then ((result)=>{
   console.log(result);
 })*/
